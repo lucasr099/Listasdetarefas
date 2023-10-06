@@ -1,0 +1,98 @@
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(173, 173, 173, 0.485);
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+   /*border: 2px solid black;*/
+    margin: auto auto;
+
+}
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+}
+button.add{
+    width: 20%;
+    cursor: pointer ;
+    background-color: rgb(7, 100, 7);
+    font-weight: bold;
+    border: none;
+    height:120px;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(2, 179, 31);
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    border: 1px;
+    padding-top: 40px;
+}
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #7f7d7d;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.item.clicado{
+    background: rgb(168, 237, 168);
+}
+.item.clicado .itemNome{
+    text-decoration: line-through;
+    color: gray;
+
+}
+.itemIcone{
+    flex: 20%;
+  /*  border: 1px solid red;*/
+    text-align: center;
+    font-size: 2rem;
+
+}
+.itemNome{
+    flex: 55%;
+   /* border: 1px solid rgb(203, 41, 130);*/
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.itemBotao{
+    flex: 25%;
+   /* border: 1px solid rgb(35, 202, 101);*/
+}
+.delete{
+    background: rgb(2, 167, 5);
+    color: white;
+    border: none;
+    padding: 10%;
+    height: 80px;
+    width: 100%;
+}
+.mdi-check-circle{
+    color: green;
+}
